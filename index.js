@@ -20,5 +20,5 @@ app.get('/', (req, res) => {
 })
 
 app.listen(port, ()=>{
-    console.log(`server initialized in http://localhost:${port}`)
+    console.log(`server initialized in port`)
 })
