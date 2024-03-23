@@ -6,7 +6,7 @@ const routes = require('./routes/products')
 
 
 const app = express()
-const port = 3000;
+const port = process.env.PORT || 3000;
 
 mongoose.connect(config.dbURL, {useNewUrlParser: true})
 .then( ()=> console.log('Successful connection to the database'))
